@@ -3,7 +3,7 @@ library(XML)
 library(openxlsx)
 setwd("C:/Users/piotr/Documents/GitHub/TimeUse")
 
-for(i in 1:12){
+for(i in 1:13){
   assign(paste0("wrksrvy",i+2002), data.frame(read.xlsx("./1.data/a1_all_years.xlsx", sheet = i, startRow = 3), year = i+2002))
 }
 
